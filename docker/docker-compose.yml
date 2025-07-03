@@ -1,0 +1,16 @@
+name: desafio-nubank
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root # TODO: Set a secure password
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - "8080:3306"
+    networks:
+      - nubank
+networks:
+  nubank:
+    driver: bridge
