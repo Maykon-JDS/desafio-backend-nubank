@@ -1,9 +1,9 @@
 package br.com.nubank.mapper;
 
-import br.com.nubank.dto.ContatosChildDTO;
-import br.com.nubank.dto.ContatosChildResponseDTO;
-import br.com.nubank.dto.ContatosDTO;
-import br.com.nubank.dto.ContatosResponseDTO;
+import br.com.nubank.dto.Contatos.ContatosChildDTO;
+import br.com.nubank.dto.Contatos.ContatosChildResponseDTO;
+import br.com.nubank.dto.Contatos.ContatosDTO;
+import br.com.nubank.dto.Contatos.ContatosResponseDTO;
 import br.com.nubank.model.Clientes;
 import br.com.nubank.model.Contatos;
 

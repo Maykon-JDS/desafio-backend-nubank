@@ -1,7 +1,7 @@
 package br.com.nubank.controller;
 
-import br.com.nubank.dto.ContatosDTO;
-import br.com.nubank.dto.ContatosResponseDTO;
+import br.com.nubank.dto.Contatos.ContatosDTO;
+import br.com.nubank.dto.Contatos.ContatosResponseDTO;
 import br.com.nubank.mapper.ContatosMapper;
 import br.com.nubank.model.Contatos;
 import br.com.nubank.service.ClientesService;

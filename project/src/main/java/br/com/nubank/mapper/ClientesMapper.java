@@ -1,7 +1,7 @@
 package br.com.nubank.mapper;
 
-import br.com.nubank.dto.ClientesResponseDTO;
-import br.com.nubank.dto.ContatosChildResponseDTO;
+import br.com.nubank.dto.Clientes.ClientesResponseDTO;
+import br.com.nubank.dto.Contatos.ContatosChildResponseDTO;
 import br.com.nubank.model.Clientes;
 
 import java.util.List;

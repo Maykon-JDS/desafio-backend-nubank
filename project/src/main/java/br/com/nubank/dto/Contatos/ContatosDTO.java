@@ -1,4 +1,4 @@
-package br.com.nubank.dto;
+package br.com.nubank.dto.Contatos;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

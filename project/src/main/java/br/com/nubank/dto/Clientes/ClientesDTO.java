@@ -1,5 +1,6 @@
-package br.com.nubank.dto;
+package br.com.nubank.dto.Clientes;
 
+import br.com.nubank.dto.Contatos.ContatosChildDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,10 +12,8 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ClientesResponseDTO {
+public class ClientesDTO {
 
-    private Long id;
     private String nome;
-    private List<ContatosChildResponseDTO> contatos;
-
+    private List<ContatosChildDTO> contatos;
 }

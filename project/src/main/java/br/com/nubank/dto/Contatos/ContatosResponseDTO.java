@@ -1,4 +1,4 @@
-package br.com.nubank.dto;
+package br.com.nubank.dto.Contatos;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Getter
 @Setter
-public class ContatosChildResponseDTO {
+public class ContatosResponseDTO {
 
     private Long id;
 
@@ -24,5 +24,7 @@ public class ContatosChildResponseDTO {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private Long clienteId;
 
 }
