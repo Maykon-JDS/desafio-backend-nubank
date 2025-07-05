@@ -1,5 +1,6 @@
-package br.com.nubank.dto;
+package br.com.nubank.dto.Clientes;
 
+import br.com.nubank.dto.Contatos.ContatosChildResponseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,6 @@ public class ClientesResponseDTO {
 
     private Long id;
     private String nome;
-    private List<ContatosResponseDTO> contatos;
+    private List<ContatosChildResponseDTO> contatos;
 
 }

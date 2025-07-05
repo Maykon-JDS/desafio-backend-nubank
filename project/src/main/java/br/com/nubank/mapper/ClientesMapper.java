@@ -1,7 +1,7 @@
 package br.com.nubank.mapper;
 
-import br.com.nubank.dto.ClientesResponseDTO;
-import br.com.nubank.dto.ContatosResponseDTO;
+import br.com.nubank.dto.Clientes.ClientesResponseDTO;
+import br.com.nubank.dto.Contatos.ContatosChildResponseDTO;
 import br.com.nubank.model.Clientes;
 
 import java.util.List;
@@ -14,7 +14,7 @@ public class ClientesMapper {
         clienteDTO.setNome(cliente.getNome());
 
         if (cliente.getContatos() != null && !cliente.getContatos().isEmpty()) {
-            List<ContatosResponseDTO> contatosDTO = cliente.getContatos().stream().map(ContatosMapper::toResponseDTO).toList();
+            List<ContatosChildResponseDTO> contatosDTO = cliente.getContatos().stream().map(ContatosMapper::toChildResponseDTO).toList();
             clienteDTO.setContatos(contatosDTO);
         }
 
