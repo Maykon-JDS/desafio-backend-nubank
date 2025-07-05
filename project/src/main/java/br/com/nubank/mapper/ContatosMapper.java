@@ -1,5 +1,6 @@
 package br.com.nubank.mapper;
 
+import br.com.nubank.dto.ContatosChildDTO;
 import br.com.nubank.dto.ContatosChildResponseDTO;
 import br.com.nubank.dto.ContatosDTO;
 import br.com.nubank.dto.ContatosResponseDTO;
@@ -45,7 +46,7 @@ public class ContatosMapper {
         return dto;
     }
 
-    public static Contatos toEntity(ContatosDTO dto, Clientes cliente) {
+    public static Contatos toEntity(ContatosChildDTO dto, Clientes cliente) {
 
         Contatos contato = new Contatos();
         contato.setClientes(cliente);
