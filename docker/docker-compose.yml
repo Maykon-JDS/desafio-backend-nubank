@@ -1,14 +1,25 @@
 name: desafio-nubank
 services:
-  db:
-    image: mysql
+  postgres:
+    image: postgres
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root # TODO: Set a secure password
+    # set shared memory limit when using docker compose
+    shm_size: 128mb
+    # or set shared memory limit when deploy via swarm stack
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ./postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
     ports:
-      - "8080:3306"
+      - "5432:5432"
+    networks:
+      - nubank
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
     networks:
       - nubank
 networks:

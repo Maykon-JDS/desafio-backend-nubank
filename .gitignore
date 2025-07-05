@@ -24,4 +24,5 @@ hs_err_pid*
 replay_pid*
 
 # docker volumes
+docker/postgres
 docker/mysql
