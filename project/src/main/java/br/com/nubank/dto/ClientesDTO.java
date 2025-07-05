@@ -14,5 +14,5 @@ import java.util.List;
 public class ClientesDTO {
 
     private String nome;
-    private List<ContatosDTO> contatos;
+    private List<ContatosChildDTO> contatos;
 }

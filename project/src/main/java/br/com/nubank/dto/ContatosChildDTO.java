@@ -5,16 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class ClientesResponseDTO {
+public class ContatosChildDTO {
 
-    private Long id;
-    private String nome;
-    private List<ContatosChildResponseDTO> contatos;
+    private String tipo;
+
+    private String conteudo;
 
 }
