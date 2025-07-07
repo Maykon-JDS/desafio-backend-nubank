@@ -1,6 +1,7 @@
 package br.com.nubank.service;
 
 import br.com.nubank.dto.Clientes.ClientesDTO;
+import br.com.nubank.dto.Clientes.ClientesRecordDTO;
 import br.com.nubank.dto.Clientes.ClientesResponseDTO;
 import br.com.nubank.dto.Contatos.ContatosResponseDTO;
 import br.com.nubank.mapper.ClientesMapper;
@@ -28,13 +29,13 @@ public class ClientesService {
         this.clientesRepository = clientesRepository;
     }
 
-    public Clientes salvarCliente(ClientesDTO clienteDTO) {
+    public Clientes salvarCliente(ClientesRecordDTO clientesRecordDTO) {
 
         Clientes cliente = new Clientes();
-        cliente.setNome(clienteDTO.getNome());
+        cliente.setNome(clientesRecordDTO.nome());
 
-        if (clienteDTO.getContatos() != null && !clienteDTO.getContatos().isEmpty()) {
-            List<Contatos> contatos = clienteDTO.getContatos().stream().map(contatosDTO -> ContatosMapper.toEntity(contatosDTO, cliente)).toList();
+        if (clientesRecordDTO.contatos() != null && !clientesRecordDTO.contatos().isEmpty()) {
+            List<Contatos> contatos = clientesRecordDTO.contatos().stream().map(contatosDTO -> ContatosMapper.toEntity(contatosDTO, cliente)).toList();
             cliente.setContatos(contatos);
         }
 

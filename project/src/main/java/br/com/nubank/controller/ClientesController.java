@@ -1,6 +1,7 @@
 package br.com.nubank.controller;
 
 import br.com.nubank.dto.Clientes.ClientesDTO;
+import br.com.nubank.dto.Clientes.ClientesRecordDTO;
 import br.com.nubank.dto.Clientes.ClientesResponseDTO;
 import br.com.nubank.dto.Contatos.ContatosResponseDTO;
 import br.com.nubank.mapper.ClientesMapper;
@@ -32,8 +33,8 @@ public class ClientesController {
             @ApiResponse(responseCode = "422", description = "Campos não atendem os requisitos para criação", content = @Content),
             @ApiResponse(responseCode = "400", description = "Erro de requisição", content = @Content),
     })
-    public ResponseEntity<ClientesResponseDTO> criar(@RequestBody ClientesDTO clienteDTO) {
-        Clientes clienteSalvo = clientesService.salvarCliente(clienteDTO);
+    public ResponseEntity<ClientesResponseDTO> criar(@RequestBody ClientesRecordDTO clientesRecordDTO) {
+        Clientes clienteSalvo = clientesService.salvarCliente(clientesRecordDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(ClientesMapper.toResponseDTO(clienteSalvo));
     }
 
