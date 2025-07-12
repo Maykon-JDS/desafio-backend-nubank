@@ -34,8 +34,4 @@ public class ContatosService {
 
         return contatosRepository.save(contato);
     }
-
-    public List<ContatosResponseDTO> listarTodos() {
-        return contatosRepository.findAll().stream().map(ContatosMapper::toResponseDTO).toList();
-    }
 }
