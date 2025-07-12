@@ -13,8 +13,6 @@
     - [Requisitos de Código](#requisitos-de-código)
     - [Diferenciais (Não obrigatórios)](#diferenciais-não-obrigatórios)
   - [Tecnologias Usadas](#tecnologias-usadas)
-  - [Estrutura do Projeto](#estrutura-do-projeto)
-  - [Como Executar o Projeto](#como-executar-o-projeto)
   - [Licença](#licença)
 
 ## Introdução
@@ -44,7 +42,7 @@ Esperamos que o código siga boas práticas de desenvolvimento, incluindo:
 ### Diferenciais (Não obrigatórios)
 
 - Uso de **Docker** para subir o PostgreSQL
-- **Testes automatizados** <!-- TODO: Implement it -->
+- **Testes automatizados**
 - Documentação com **Swagger**
 
 ## Tecnologias Usadas
@@ -55,13 +53,15 @@ Esperamos que o código siga boas práticas de desenvolvimento, incluindo:
 ![Lombok](https://img.shields.io/badge/Lombok-FF0000?style=for-the-badge&logo=lombok&logoColor=white)&nbsp;
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)&nbsp;
 
-## Estrutura do Projeto
+<!-- ## Estrutura do Projeto -->
 
-Para entender a estrutura do projeto, consulte [Estrutura do Projeto](link_para_o_documentacao_estrutura.md). <!-- TODO: Implement it -->
+<!-- Para entender a estrutura do projeto, consulte [Estrutura do Projeto](link_para_o_documentacao_estrutura.md).  -->
+<!-- TODO: Implement it -->
 
-## Como Executar o Projeto
+<!-- ## Como Executar o Projeto -->
 
-Para obter instruções sobre como executar o projeto, consulte [Como Executar o Projeto](link_para_o_documentacao_execucao.md). <!-- TODO: Implement it -->
+<!-- Para obter instruções sobre como executar o projeto, consulte [Como Executar o Projeto](link_para_o_documentacao_execucao.md).  -->
+<!-- TODO: Implement it -->
 
 ## Licença
 Este projeto está sob a [Licença MIT](./LICENSE.md). Consulte o arquivo [LICENSE.md](LICENSE.md) para obter mais detalhes.
